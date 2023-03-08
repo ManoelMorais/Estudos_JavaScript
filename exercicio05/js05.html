@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de identificador de multas</h1>
+    Velocidade do carro<input type="number" name="textn1" id="textn1"> km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="resultado"></div>
+    <script>    
+        function calcular() {
+            var txt1 = document.getElementById('textn1')
+            var resultado = document.querySelector("div#resultado")
+            var vel = Number(txt1.value)
+            resultado.innerHTML = `<p>A sua veloçidade é <strong>${vel}km/h</strong></p>`
+            if (vel >75) {
+                resultado.innerHTML += "<p>Vocé abaca de ser <strong>MULTADO</strong> por ultrapassar a veloçidade permitida"
+            }
+
+            resultado.innerHTML +="Diriga sempre com o cinto de segurança"
+        }
+    </script>
+</body>
+</html>

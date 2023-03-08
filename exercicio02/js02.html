@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p>Vai alguns exemplos ai </p>
+    <p>Aprendendo  a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div><!-- pode usar no lugar de id o name, class-->
+    <br>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write("Esta escrito assim:" + p1.innerText)
+        p1.style.color = 'pink'
+        /*
+        var F = window.document.getElementById('msg')
+        F.style.background= 'green'
+        */
+        var F = window.document.querySelector('div#msg')  //id # já a class . 
+    </script>
+</body>
+</html>
