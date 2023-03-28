@@ -22,6 +22,20 @@
 
         valor.toFixed(2).replace('.' , ',')
             '1542,90'
+    
+
+        toFixed(2) usado para add casas decimais. ex= 1329.9 = 1329.90 
+
+    
+        n1 = 1329.5
+        1329.5
+        n1.toFixed(2)
+        1329.50
+        n1.toFixed(2).replace('.' , ',')
+        '1329,50'
+    
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        'R$ 1.329,50'
     -->
     <script>
         var nome = window.prompt('Qual seu nome?')
