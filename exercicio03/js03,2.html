@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,14 +23,19 @@
     </div>
     <script>
          var lugar= document.getElementById('área')
-        function clicar() { 
+        lugar.addEventListener('click', clicar)
+        lugar.addEventListener('mouseenter', entrar)
+        lugar.addEventListener('mouseout', sair)
+        
+        
+         function clicar() { 
             lugar.innerHTML= "Clicou"
             lugar.style.background = 'green'
         }
-        function Entrar() {
+        function entrar() {
             lugar.innerHTML= "Entrou"
         }
-        function Sair() {
+        function sair() {
             lugar.innerHTML= "Saiu"
             lugar.style.background = 'red'
         }
