@@ -5,13 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: rgb(214, 188, 140);
+        }
+        h1 {
+            position: relative;
+            top: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+        #caixa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(255, 254, 254);
+            width: 450px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 8px 22px 41px 13px rgba(42, 10, 221, 0.705);
+        }
+        .caixa1 {
+            position: relative;
+            top: 40px;
+            left: 30px;
+            font-size: 1em;
+        }
+        .botao {
+            position: relative;
+            top: 70px;
+            left: 200px;
+            padding: 5px;
+        }
+        #res {
+            position: relative;
+            bottom: -110px;
+            left: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <div id="caixa">
+        <h1>Somando valores</h1>
+        <input type="number" name="txtn1" id="txtn1" class="caixa1"> 
+        <input type="number" name="txtn2" id="txtn2" class="caixa1">
+        <input type="button" value="Somar" onclick="somar()" class="botao">
+        <div id="res">Resultado =</div>
+    </div>
     <script>
         function somar() {
             var tn1= document.getElementById("txtn1")
