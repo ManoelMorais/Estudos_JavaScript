@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: burlywood;
+}
+header {
+    text-align: center;
+    padding: 25px;
+    font-size: 19px;
+}
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(22, 25, 207);
+}
+div {
+    padding: 10px;    
+}
+input {
+    margin-bottom: 15px;
+}
+.caixa {
+    letter-spacing: 2px;
+}
+#res {
+    text-align: center;
+}
+img {
+    padding: 10px;
+    background-size: cover;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+footer {
+    background: black;  
+    position : absolute;
+    padding: 5px;
+    bottom : 0px;
+    width : 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font: italic 12pt Arial;
+    text-align: center; 
+}

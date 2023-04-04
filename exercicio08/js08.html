@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Verificador de idade</h2>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <br> <br>
+                <input type="radio" name="radsex" id="masc" clas='caixa' checked>
+                <label for="masc" class="caixa">Masculino</label> 
+                <br>
+                <input type="radio" name="radsex" id="fem" class="caixa">
+                <label for="fem" class="caixa">Feminino</label>
+            </p>
+            <br>
+            <p>
+                <input type="button" value="verficar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados para ver o resultado.
+        </div>
+    </section>
+    <footer>
+        <a href="https://github.com/ManoelMorais" target="_blank">
+            <p>github</p>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
