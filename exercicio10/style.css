@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+    padding: 25px;
+    font-size: 2em;
+}
+body {
+    background: cadetblue;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 450px;
+    height: 270px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(104, 104, 230);
+}
+#res {
+    position: relative;
+    padding: 35px;
+    right: -20%;
+}
+footer {
+    background: rgb(255, 255, 255);  
+    position : absolute;
+    padding: 5px;
+    bottom : 0px;
+    width : 100%;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font: italic 12pt Arial;
+    text-align: center; 
+}
