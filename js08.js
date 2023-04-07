@@ -38,3 +38,15 @@ if (pos == -1){
 //for (let res in num){
 ///   console.log(`A posição ${res} tem o valor ${num[res]}`)
 //}
+
+
+// array 
+// let num = [5,8,5]
+//          5  8  5
+//equivale  0  1  2
+//
+
+
+//Object
+//let amigo = {nome:'manoel', sexo:'m',peso:70.4, engordar(p){}}
+//                                               [function]
