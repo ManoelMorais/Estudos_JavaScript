@@ -16,21 +16,11 @@ section{
     border-radius: 10px;
     padding: 15px;
     width: 450px;
-    height: 270px;
+    height: 290px;
     margin: auto;
     box-shadow: 3px 3px 10px rgb(104, 104, 230);
 }
-#res {
-    position: relative;
-    padding: 35px;
-    right: 10px;
-}
-#fim {
-    position: relative;
-    padding: 5px;
-    right: -25px;
-    bottom: 30px;
-}
+
 footer {
     background: rgb(255, 255, 255);  
     position : absolute;
