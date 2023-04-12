@@ -1,7 +1,7 @@
 let aviso = document.querySelector('#aviso')
 let formulario = document.querySelector('form')
 
-let btnCalcular = document.querySelector('btnCalcular')
+let btnCalcular = document.querySelector('#btnCalcular')
 let btnLimpar = document.querySelector('#btnLimpar')
 
 let cxNota1 = document.querySelector('#nota1')
