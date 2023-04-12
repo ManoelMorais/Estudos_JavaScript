@@ -50,7 +50,7 @@ function formatarSituacao(situacaoFinal){
             break    
         
         default: 
-            console.log('S ituação Indefinida')
+            console.log('Situação Indefinida')
     }
 }
 
@@ -64,7 +64,7 @@ function ValidarNumero(numero){
         setTimeout(function(){
             aviso.textContent = ''
             aviso.classList.remove('alerta')    
-        }, 2000);
+        }, 2000)
     } 
 }
 
@@ -80,10 +80,11 @@ btnCalcular.addEventListener('click', function(e) {
     console.log(media)
 
     if(isNaN(media) || media < 0 ){
-        console.log('Não e um número')
+        console.log('Não é um número')
         cxSituacao.value = ''
     } else {
         cxMedia.value = parseFloat(media)
+        cxSituacao.value = situacaoFinal(media)
         formatarSituacao(situacaoFinal(media))
     }
     e.preventDefault()
