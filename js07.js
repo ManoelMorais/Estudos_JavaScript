@@ -1,4 +1,6 @@
 
+//Repetição
+
 //modo 1
 
 var c = 1 

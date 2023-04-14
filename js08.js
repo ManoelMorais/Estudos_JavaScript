@@ -19,14 +19,15 @@ console.log(num)
 //num.shift() remover do inicio
 //
 //console.log(num)
-console.log(`O vetor e composto por ${num.length}`)
-console.log(`O primeiro vetor é ${num[0]}`)
-let pos = num.indexOf(2)
-if (pos == -1){
-    console.log('O valor não foi encontrado!')
-} else {
-    console.log(`O valor 5 está na posição ${pos}`)
-}
+
+//console.log(`O vetor e composto por ${num.length}`)
+//console.log(`O primeiro vetor é ${num[0]}`)
+//let pos = num.indexOf(2)
+//if (pos == -1){
+//    console.log('O valor não foi encontrado!')
+//} else {
+//   console.log(`O valor 5 está na posição ${pos}`)
+//}
 
 
 //for (let res=0; res < valores.length; res++){
@@ -35,9 +36,9 @@ if (pos == -1){
 //
 //
 //para cada posição dentro de num vou mostrar a variavel composta
-//for (let res in num){
-///   console.log(`A posição ${res} tem o valor ${num[res]}`)
-//}
+for (let res in num){
+   console.log(`A posição ${res} tem o valor ${num[res]}`)
+}
 
 
 // array 
