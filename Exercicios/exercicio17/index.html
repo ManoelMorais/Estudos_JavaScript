@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Quiz</h1>
+        <section class="conteudos">
+            <article class="centro" id="instrucoes">
+                Leia a questão com atenção.
+            </article>
+            <article class="questoes">
+                <header class="questao">
+                    <span id="numQuestao"></span>
+                    <h2 id="perguntas"></h2>
+                </header>
+                <div class="corpo">
+                    <ol type="A" id="alternativas">
+                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <span id="respostaEsta"></span>
+                    </ol>
+                </div>
+            </article>
+            <article id="aviso">Questão <span id="numero"></span> de <span id="total"></span></article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

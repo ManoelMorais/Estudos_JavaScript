@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff9f90c;
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem; 
+}
+
+section {
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0f051b;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 0.625rem;
+    color: #0c0c0c;
+}
+
+.form-group {
+    text-align: center;
+    width: 280px;
+    margin: 1rem;
+    padding: 0.625rem;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+}
+
+.instrucoes {
+    text-align: center;
+    margin: 1rem;
+}
+
+input[type=number] {
+    text-align: right;
+}
+
+input:disabled {
+    background: #ececec;
+    cursor: not-allowed;
+}
+
+input[type=range] {
+    cursor: pointer;
+    outline: none;
+}
+
+.slider {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 1rem;
+}
+
+.slider span {
+    font-size: 1rem;
+    margin: 0 0.625rem;
+}
+
+#marcas {
+    color: #fff;
+}
+
+#btnZerar {
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnZerar:hover {
+    background: rgb(129, 117, 117);
+    color: #0c0c0c;
+    transition: all .3s;
+}
+
+
+@keyframes piscar {
+    0% {
+        filter: drop-shadow(0 0 15px #c81adf);
+        -webkit-filter: drop-shadow(0 0 15px #c81adf);
+        -moz-filter: drop-shadow(0 0 15px #c81adf);
+        -o-filter: drop-shadow(0 0 15px #c81adf);
+        -ms-filter: drop-shadow(0 0 15px #c81adf);
+    }
+    100% {
+    }
+}
+/*#00b0ff*/
+
+.animar {
+    animation: piscar .75s infinite alternate;
+}
