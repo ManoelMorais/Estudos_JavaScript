@@ -9,4 +9,4 @@ magro(p=0){
 
 
 amigo.magro(10)
- console.log(`${amigo.nome} peso ${amigo.peso}Kg`)
+    console.log(`${amigo.nome} peso ${amigo.peso}Kg`)
