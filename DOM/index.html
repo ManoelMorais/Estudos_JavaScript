@@ -24,9 +24,18 @@
             GitHub
         </a>
     </p>
-    <h2></h2>
-    
-    <script src="dom04_elements.js">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nome = document.querySelector("#title") 
+            console.log("nome", nome) 
+    })
+    </script>
+
+    <h2 id="title">Home Page</h2>
+    <a id="mdn" onclick="click" href="https://developer.mozilla.org/en-US/docs/Web/API/Event/type">Clique</a>
+    <button onclick="">Clique</button>
+
+    <script src="dom06_events.js">
     </script>
 </body>
 </html>
