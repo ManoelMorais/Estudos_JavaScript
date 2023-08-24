@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Recuperar dados</button>
+    <br><br>
+    <script>
+        const loadDara = () => {
+            const xhr = new XMLHttpRequest()
+
+            xhr.open("GET", "https://api.github.com/users/ManoelMorais")
+            xhr.send(null)
+
+            xhr.onreadystatechange = () => {
+                if(xhr.readyState === 4) {
+                    const res = JSON.parse(xhr.responseText)
+                    //console.log(res.name) //pode escolher um dado e puxar ele direto tipo res.name ai aparece o dado
+
+                    const name = res.name
+                    const avatarUrl = res.avatar_url
+                    const followers = res.followers
+                    const blogUrl = res.blog
+
+                    //console.log({name, avatarUrl, followers, blogUrl})
+
+                    const elAvatar = document.createElement("img")
+                    elAvatar.setAttribute("width", "128")
+                    elAvatar.setAttribute("src", avatarUrl)
+                    //console.log(elAvatar)
+
+                    const nameEl = document.createElement("h1")
+                    nameEl.innerHTML = name
+                    //console.log(nameEl)
+
+                    const followersEl = document.createElement("p")
+                    followersEl.innerHTML = `Followers: ${followers}`
+                    //console.log(followersEl)
+
+                    const blogEl = document.createElement("a")
+                    blogEl.setAttribute("href", `https://${blogUrl}`)
+                    blogEl.innerHTML = blogUrl
+                    //console.log(blogEl)
+
+                    document.body.appendChild(nameEl)
+                    document.body.appendChild(elAvatar)
+                    document.body.appendChild(followersEl)
+                    document.body.appendChild(blogEl)
+                }
+            }
+        } 
+
+
+        const buttpnEl = document.querySelector("button")
+        buttpnEl.addEventListener("click", loadDara)
+    </script>
+</body>
+</html>

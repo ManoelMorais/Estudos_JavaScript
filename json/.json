@@ -1,0 +1,12 @@
+{
+    "name": "manoel",
+    "age": 18,
+    "address": {
+        "street": "avenida principal",
+        "number": "555",
+        "complemente": "ao lado do colégio",
+        "distric": "centro",
+        "city": "Aracaju",
+        "state": "Aju"
+    }
+}
