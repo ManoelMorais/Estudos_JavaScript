@@ -8,20 +8,20 @@ form.addEventListener('input', (event) => {
 
 
     // aula 02
-    //const formData = new FormData(form)
-    // if(formData.has("name") || formData.has("password")){
-    //     console.log(formData.get("name"))
-    //     console.log(formData.get("password"))  
-    // } else {
-    //     console.log(formData.delete("name"))
-    //     console.log(formData.delete("password")) 
-    // }
+    const formData = new FormData(form)
+     if(formData.has("name") || formData.has("password")){
+         console.log(formData.get("name"))
+         console.log(formData.get("password"))  
+     } else {
+         console.log(formData.delete("name"))
+         console.log(formData.delete("password")) 
+     }
     
     // aula 01
-    // if(name && password){
-    //     console.log(name, password)
-    //     form.submit();
-    // };
+     if(name && password){
+         console.log(name, password)
+         form.submit();
+     };
 
     // aula 03
     const newDivElement = document.createElement('div')
