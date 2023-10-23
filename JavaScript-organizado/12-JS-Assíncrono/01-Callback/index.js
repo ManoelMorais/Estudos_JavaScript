@@ -9,7 +9,7 @@
  * para lidar com o resultado 
  */
 
-/// modo 0'
+/// modo 01
 setInterval(() => {
     returnConsole();
 }, 2000);
