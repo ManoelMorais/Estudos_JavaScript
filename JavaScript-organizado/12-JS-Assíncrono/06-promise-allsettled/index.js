@@ -33,3 +33,20 @@ const promise1 = new Promise((resolve, reject) => {
     }, 1000);
   });
   
+
+  Promise.allSettled([promise1,promise2,promise3]).then((resAllSettled) => {
+    console.log(resAllSettled);
+  });
+
+  Promise.allSettled([promise1,promise2,promise3]).then((resAllSettled) => {
+    resAllSettled.forEach((item) => {
+
+      if(item.status === 'fulfilled'){
+        console.log(item.value)
+      } 
+
+      if(item.status === 'rejected'){
+        console.log(item.value)
+      }
+    });
+  });
